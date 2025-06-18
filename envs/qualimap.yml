@@ -1,0 +1,8 @@
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - qualimap==2.3
+  - numpy==1.26.0
+  - pandas==1.2.3

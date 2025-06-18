@@ -1,0 +1,46 @@
+report_language: "tr" # en, tr
+metadata: "samples.tsv"
+thread: 24
+
+organism: Fungi #Eukaryota #Bacteria
+dbs_link: "https://drive.google.com/drive/folders/14dAfY5UFnwlWuO6Hpoxwz_ZcWDNuuPmA"
+massive_db_link: "https://drive.google.com/drive/folders/1LYKA9c_vp0sbKauiW6VU0lmi7-6GNywo?usp=sharing"
+css_style: "styles/"
+candida_genome_size: "--genome-size 12.2m"
+gambit_db: "dbs/gambit/"
+
+trimmomatic:
+  minlen_16S: 1250
+  minlen_ITS: 200
+  minlen_18S: 400
+  headcrop: 15
+  crop: 1750
+
+# 23S trimmomatic parametreleri
+# minlen 3000
+# headcrop 15
+# avgqual 15
+# calculate_qual False
+# crop 5000
+
+import_feature_table:
+  f_type: "'FeatureTable[Frequency]'"
+  input_format: "BIOMV210Format"
+
+import_merged_fasta: 
+  f_type: "'FeatureData[Sequence]'"
+
+format_input:
+  p_class: -c 2 #-c
+  subclass: -s -1 #-s
+  subject: -u 1 #-u
+  norm_v: -o 1000000 #-o
+
+create_pdf: 
+  phylum: "data/report/{sample}/Graphs/{sample}_piecharts_Phylum.png"
+  class_pic: "data/report/{sample}/Graphs/{sample}_piecharts_Class.png"
+  order: "data/report/{sample}/Graphs/{sample}_piecharts_Order.png"
+  family: "data/report/{sample}/Graphs/{sample}_piecharts_Family.png"
+  genus: "data/report/{sample}/Graphs/{sample}_piecharts_Genus.png"
+  species: "data/report/{sample}/Graphs/{sample}_piecharts_Species.png"
+  quality: "data/report/{sample}/Graphs/{sample}_linegraph.png"

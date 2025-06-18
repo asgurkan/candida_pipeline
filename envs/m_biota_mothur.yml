@@ -1,0 +1,7 @@
+channels:
+  - conda-forge
+  - bioconda
+  - defaults
+dependencies:
+  - mothur=1.44.11
+  - biom-format=2.1.10
