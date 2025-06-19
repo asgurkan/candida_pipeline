@@ -1,0 +1,7 @@
+name: gambit
+channels:
+  - bioconda
+  - defaults
+dependencies:
+  - libgcc >=13
+  - gambit==1.1.0

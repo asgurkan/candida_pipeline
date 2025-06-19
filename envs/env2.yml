@@ -1,0 +1,11 @@
+channels:
+  - bioconda
+  - conda-forge
+  - defaults
+  - r
+dependencies:
+  - qualimap
+  - tabix
+  - longshot
+  - py-bgzip
+  - pandas=1.5.3

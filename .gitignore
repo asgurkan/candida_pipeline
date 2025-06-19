@@ -1,0 +1,5 @@
+workspace
+samples
+data
+dbs
+.snakemake

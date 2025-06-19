@@ -1,0 +1,9 @@
+name: general
+channels:
+  - bioconda
+  - defaults
+dependencies:
+  - fastqc==0.12.1
+  - trimmomatic=0.39
+  - pandas==2.3.0
+  - numpy==2.3.0

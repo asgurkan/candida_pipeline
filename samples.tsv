@@ -1,0 +1,4 @@
+sample-id	proje	sample	fastq_path
+S3M2446	c_deneme	S3M2446	/home/massbiome/Desktop/pipelines/candida_pipeline/samples/barcode01
+T2M2497	c_deneme	T2M2497	/home/massbiome/Desktop/pipelines/candida_pipeline/samples/barcode02
+U11M2015	c_deneme	U11M2015	/home/massbiome/Desktop/pipelines/candida_pipeline/samples/barcode03
